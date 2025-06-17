@@ -1,0 +1,93 @@
+{
+    "name": "wolfram-alpha",
+    "displayName": "Wolfram Alpha",
+    "description": "Access Wolfram Alpha's computational knowledge engine through natural language queries. Perform mathematical calculations, get scientific data, and query factual information.",
+    "version": "1.0.0",
+    "author": "MCP Community",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/your-username/wolfram-alpha-mcp-server"
+    },
+    "homepage": "https://github.com/your-username/wolfram-alpha-mcp-server",
+    "category": "knowledge",
+    "tags": [
+        "mathematics",
+        "science",
+        "computation",
+        "knowledge",
+        "wolfram",
+        "calculator",
+        "physics",
+        "chemistry",
+        "geography"
+    ],
+    "capabilities": {
+        "tools": true,
+        "resources": false,
+        "prompts": false
+    },
+    "environment": {
+        "required": [
+            {
+                "name": "WOLFRAM_ALPHA_APP_ID",
+                "description": "Your Wolfram Alpha App ID from the Developer Portal",
+                "type": "string"
+            }
+        ]
+    },
+    "installation": {
+        "npm": "wolfram-alpha-mcp-server"
+    },
+    "command": "node build/index.js",
+    "examples": [
+        {
+            "title": "Solve quadratic equation",
+            "tool": "wolfram_query",
+            "input": {
+                "input": "solve x^2 + 5x + 6 = 0"
+            }
+        },
+        {
+            "title": "Get speed of light",
+            "tool": "wolfram_query",
+            "input": {
+                "input": "speed of light"
+            }
+        },
+        {
+            "title": "Population of Tokyo",
+            "tool": "wolfram_query",
+            "input": {
+                "input": "Tokyo population"
+            }
+        },
+        {
+            "title": "Convert temperature",
+            "tool": "wolfram_query",
+            "input": {
+                "input": "convert 100 fahrenheit to celsius"
+            }
+        },
+        {
+            "title": "Molecular weight calculation",
+            "tool": "wolfram_query",
+            "input": {
+                "input": "molecular weight of caffeine"
+            }
+        }
+    ],
+    "documentation": {
+        "readme": "README.md",
+        "links": [
+            {
+                "title": "Wolfram Alpha Developer Portal",
+                "url": "https://developer.wolframalpha.com/"
+            },
+            {
+                "title": "Wolfram Alpha LLM API Documentation",
+                "url": "https://products.wolframalpha.com/llm-api/documentation"
+            }
+        ]
+    }
+}
