@@ -17,6 +17,8 @@ A Model Context Protocol (MCP) server that provides access to Wolfram Alpha's co
 
 Query Wolfram Alpha for computational, mathematical, scientific, and factual information.
 
+This has been invaluable to me as LLMs have such a tough time with math computation so Wolfram Alpha comes in so handy.
+
 **Parameters:**
 
 - `input` (required): The natural language query to send to Wolfram Alpha
