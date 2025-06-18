@@ -1,4 +1,5 @@
 # Wolfram Alpha MCP Server
+[![smithery badge](https://smithery.ai/badge/@henryhawke/wolfram-llm-mcp)](https://smithery.ai/server/@henryhawke/wolfram-llm-mcp)
 
 A Model Context Protocol (MCP) server that provides access to Wolfram Alpha's computational knowledge engine through natural language queries.
 
@@ -47,6 +48,14 @@ Query Wolfram Alpha with specific assumptions when the initial query returns mul
 
 1. **Node.js**: Version 18.0.0 or higher
 2. **Wolfram Alpha App ID**: Get one from the [Wolfram Alpha Developer Portal](https://developer.wolframalpha.com/)
+
+### Installing via Smithery
+
+To install wolfram-llm-mcp for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@henryhawke/wolfram-llm-mcp):
+
+```bash
+npx -y @smithery/cli install @henryhawke/wolfram-llm-mcp --client claude
+```
 
 ### Installation
 
